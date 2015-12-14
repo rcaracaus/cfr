@@ -1,0 +1,12 @@
+.search {
+  display: flex;
+  margin-top: 1.25rem;
+  @include breakpoint($bp-small) {
+    float: right;
+  }
+}
+
+.search__input {
+  padding: .25rem;
+}
+

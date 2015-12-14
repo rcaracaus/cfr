@@ -1,0 +1,27 @@
+@import "layout-max";
+
+$header__body-padding: 142px;
+
+.header,
+%header {
+  width: 100%;
+  background: #411c0b;
+  @include breakpoint($bp-small) {
+    position: fixed;
+    top: 0;
+    height: $header__body-padding;
+  }
+}
+
+.header__body-padding,
+%header__body-padding {
+  @include breakpoint($bp-small) {
+    margin-top: $header__body-padding;
+  }
+}
+
+.header__inner,
+%header__inner {
+  @extend %layout-max;
+}
+
