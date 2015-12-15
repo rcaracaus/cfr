@@ -8,9 +8,15 @@ $bp-small: 650px;
 
 $bp-large: 960px;
 
+@import "layout-max";
+@import "layout-sidebar";
 @import "header";
 @import "main-menu";
 @import "search";
+@import "banner";
+@import "footer";
+
+
 
 
 

@@ -1,0 +1,58 @@
+@import "layout-max";
+
+$bp-layout-sidebar: 900px;
+
+
+.layout-sidebar,
+%layout-sidebar {
+  @extend %layout-max;
+  flex-wrap: wrap;
+  @include breakpoint($bp-layout-sidebar) {
+    display: flex;
+  }
+}
+
+.layout-sidebar__left,
+%layout-sidebar__left {
+  padding: 1rem;
+  background: tan;
+  width: 100%;
+  display: flex;
+  @include breakpoint($bp-layout-sidebar) {
+    width: 25%;
+    display: block;
+  }
+}
+
+.layout-sidebar__section,
+%layout-sidebar__section {
+  padding: 0 1rem;
+  width: 50%;
+  margin-bottom: 1rem;
+  @include breakpoint($bp-layout-sidebar) {
+    margin-bottom: 2rem;
+    padding: 0;
+    width: auto;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    a { color: black; }
+  }
+
+  h2 {
+    margin: 0 0 1rem;
+  }
+}
+
+.layout-sidebar__right,
+%layout-sidebar__right {
+  padding: 1rem;
+  width: 100%;
+  @include breakpoint($bp-layout-sidebar) {
+    width: 75%;
+  }
+
+}

@@ -1,0 +1,20 @@
+.footer,
+%footer {
+  background: black;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+}
+
+.footer__menu,
+%footer__menu {
+  @extend %layout-max;
+  list-style: none;
+  text-align: right;
+  li {
+    display: inline-block;
+  }
+  a {
+    color: white;
+  }
+}

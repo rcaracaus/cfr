@@ -4,11 +4,13 @@ $bp-main-menu: 650px;
 %main-menu__container {
   background: #fff;
   text-align: center;
+  line-height: 1rem ;
 }
 
 .main-menu,
 %main-menu {
   @extend %layout-max;
+  padding: 1rem;
   text-align: left;
   text-transform: uppercase;
   display: inline-block;

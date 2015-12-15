@@ -23,5 +23,6 @@ $header__body-padding: 142px;
 .header__inner,
 %header__inner {
   @extend %layout-max;
+  padding: 1rem;
 }
 

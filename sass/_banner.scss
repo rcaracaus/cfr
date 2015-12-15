@@ -1,0 +1,26 @@
+@import "layout-max";
+
+.banner,
+%banner {
+  @extend %layout-max;
+  position: relative;
+  z-index: -1;
+}
+
+.banner__meta,
+%banner__meta {
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: white;
+  padding: 2rem;
+  text-align: right;
+}
+
+
+.banner__heading,
+%banner__heading {
+  font-size: 3rem;
+}

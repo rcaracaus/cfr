@@ -2,11 +2,79 @@
   box-sizing: border-box; }
 
 .layout-max,
+.layout-sidebar,
 .header__inner,
-.main-menu {
+.main-menu,
+.banner,
+.footer__menu {
   max-width: 1060px;
-  margin: auto;
-  padding: 1rem; }
+  margin: auto; }
+
+.layout-max,
+.layout-sidebar,
+.header__inner,
+.main-menu,
+.banner,
+.footer__menu {
+  max-width: 1060px;
+  margin: auto; }
+
+.layout-sidebar {
+  flex-wrap: wrap; }
+
+@media (min-width: 900px) {
+  .layout-sidebar {
+    display: flex; } }
+
+.layout-sidebar__left {
+  padding: 1rem;
+  background: tan;
+  width: 100%;
+  display: flex; }
+
+@media (min-width: 900px) {
+  .layout-sidebar__left {
+    width: 25%;
+    display: block; } }
+
+.layout-sidebar__section {
+  padding: 0 1rem;
+  width: 50%;
+  margin-bottom: 1rem; }
+
+@media (min-width: 900px) {
+  .layout-sidebar__section {
+    margin-bottom: 2rem;
+    padding: 0;
+    width: auto; } }
+
+.layout-sidebar__section ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.layout-sidebar__section ul a {
+  color: black; }
+
+.layout-sidebar__section h2 {
+  margin: 0 0 1rem; }
+
+.layout-sidebar__right {
+  padding: 1rem;
+  width: 100%; }
+
+@media (min-width: 900px) {
+  .layout-sidebar__right {
+    width: 75%; } }
+
+.layout-max,
+.layout-sidebar,
+.header__inner,
+.main-menu,
+.banner,
+.footer__menu {
+  max-width: 1060px;
+  margin: auto; }
 
 .header {
   width: 100%;
@@ -22,11 +90,16 @@
   .header__body-padding {
     margin-top: 142px; } }
 
+.header__inner {
+  padding: 1rem; }
+
 .main-menu__container {
   background: #fff;
-  text-align: center; }
+  text-align: center;
+  line-height: 1rem; }
 
 .main-menu {
+  padding: 1rem;
   text-align: left;
   text-transform: uppercase;
   display: inline-block; }
@@ -181,3 +254,45 @@
 
 .search__input {
   padding: .25rem; }
+
+.layout-max,
+.layout-sidebar,
+.header__inner,
+.main-menu,
+.banner,
+.footer__menu {
+  max-width: 1060px;
+  margin: auto; }
+
+.banner {
+  position: relative;
+  z-index: -1; }
+
+.banner__meta {
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: white;
+  padding: 2rem;
+  text-align: right; }
+
+.banner__heading {
+  font-size: 3rem; }
+
+.footer {
+  background: black;
+  color: white;
+  padding: 1rem;
+  width: 100%; }
+
+.footer__menu {
+  list-style: none;
+  text-align: right; }
+
+.footer__menu li {
+  display: inline-block; }
+
+.footer__menu a {
+  color: white; }
